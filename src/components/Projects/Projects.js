@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledParagraph, StyledLink } from "../styles/Typography.styled";
+import { StyledParagraph} from "../styles/Typography.styled";
 import { ProjectsContainer, StyledProjects } from "../styles/Projects.styled";
 import { SectionHeading, SectionTitle } from "../styles/SectionHeading";
 import { projectData } from "./projectsData";
@@ -13,13 +13,7 @@ const Projects = () => {
       </SectionHeading>
       <StyledParagraph dark="true" textAlign="center">
         Some of my projects.{" "}
-        <StyledLink
-          href="https://github.com/mugambi645"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Want to see more?
-        </StyledLink>
+        
       </StyledParagraph>
       <ProjectsContainer>
         {projectData.map((project) => {
